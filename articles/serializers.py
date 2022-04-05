@@ -4,6 +4,10 @@ from .models import Article
 
 
 class ArticleSerializer(serializers.Serializer):
+    """
+    TODO:Document
+    """
+
     title = serializers.CharField(max_length=120)
     description = serializers.CharField()
     created_at = serializers.DateField()

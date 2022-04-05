@@ -9,6 +9,10 @@ from .serializers import ArticleSerializer
 
 
 class ArticleView(APIView):
+    """
+    TODO:Document
+    """
+
     def get(self, request):
         articles = Article.objects.all()
         serializer = ArticleSerializer(articles, many=True)
@@ -25,6 +29,10 @@ class ArticleView(APIView):
 
 
 class ArticleDetailView(APIView):
+    """
+    TODO:Document
+    """
+
     def get_object(self, pk):
         try:
             return Article.objects.get(pk=pk)

@@ -2,6 +2,10 @@ from django.db import models
 
 
 class Author(models.Model):
+    """
+    Describes the 'Author' entity.
+    """
+
     name = models.CharField(max_length=100)
     email = models.EmailField(max_length=100)
 
@@ -10,6 +14,10 @@ class Author(models.Model):
 
 
 class Article(models.Model):
+    """
+    TODO:Document
+    """
+
     title = models.CharField(max_length=100)
     description = models.CharField(max_length=100)
     created_at = models.DateField()
